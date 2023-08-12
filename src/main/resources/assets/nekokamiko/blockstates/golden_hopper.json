@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "facing=down":  { "model": "nekokamiko:block/golden_hopper"                }
+    }
+}

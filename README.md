@@ -2,10 +2,15 @@
 
 ねこかみこさん用
 
-Developer    もやっしー
+Developer
 
-Staff    ねこかみこ
-         ペンイカ
+もやっしー
+
+Staff    
+
+ねこかみこ
+         
+ペンイカ
 
 ReferenceMod
 

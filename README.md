@@ -5,7 +5,6 @@
 Developer    もやっしー
 
 Staff    ねこかみこ
-
          ペンイカ
 
 ReferenceMod

@@ -16,4 +16,11 @@ ReferenceMod
 
 ーGoldenHopperMod ホッパーシステム仕様
 
+https://github.com/MrCrayfish/GoldenHopper
+
+
 ーMCEconomy3 アイテムの価格設定参考
+
+https://github.com/shift02/MCEconomy3/tree/master
+
+

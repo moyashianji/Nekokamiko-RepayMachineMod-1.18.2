@@ -6,6 +6,7 @@ import com.Moyashi.Nekokamiko.init.ModBlocks;
 import com.Moyashi.Nekokamiko.init.ModEntities;
 import com.Moyashi.Nekokamiko.init.ModItems;
 import com.Moyashi.Nekokamiko.minecart.entity.ClientHandler;
+import com.Moyashi.Nekokamiko.tooltip.addtip;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,6 +31,7 @@ public class nekokamiko {
         ModEntities.REGISTER.register(bus);
         generateConfigFile();
         onHUD.register();
+        addtip.register();
         bus.addListener(this::onClientSetup);
         bus.addListener(this::onGatherData);
     }

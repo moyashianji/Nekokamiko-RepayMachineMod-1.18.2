@@ -1,23 +1,53 @@
 package com.Moyashi.Nekokamiko.repayhopper.item;
 
+
+import javax.annotation.Nullable;
+
+import com.Moyashi.Nekokamiko.hopper.core.OriginalHopperEntity;
+import com.Moyashi.Nekokamiko.hopper.entity.AbstractHopperBlockEntity;
 import com.Moyashi.Nekokamiko.minecart.entity.GoldenHopperMinecart;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.core.dispenser.DispenseItemBehavior;
+import net.minecraft.stats.Stats;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.Containers;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.AbstractMinecart;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.BaseRailBlock;
-import net.minecraft.world.level.block.DispenserBlock;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.Hopper;
+import net.minecraft.world.level.block.entity.HopperBlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
+import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.RailShape;
-
+import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.pathfinder.PathComputationType;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.BooleanOp;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraftforge.items.CapabilityItemHandler;
 /**
  * Author: MrCrayfish
  */
@@ -25,11 +55,7 @@ import net.minecraft.world.level.block.state.properties.RailShape;
 /**
  * このクラスでは、Mainカートが出された時に周りにあるのがレールか否かを判定して、Mainカートを任意の座標に出現させる
  */
-public class RepayHopperItem extends Item
-{
-    //DefaultDispenseItemBehaviorクラスを拡張した匿名クラスの定義
-    //アイテムをディスペンサーから発射する際のデフォルトの挙動をt芸妓
-    //ディスペンサーからゴールデンホッパーマインカートを生成する挙動をおーーバーライドする
+public class RepayHopperItem extends Item {
     private static final DispenseItemBehavior MINECART_DISPENSER_BEHAVIOR = new DefaultDispenseItemBehavior()
     {
         //デフォルトのアイテムディスペンサーの挙動を格納するためのフィールド宣言
@@ -105,7 +131,7 @@ public class RepayHopperItem extends Item
     };
 
     //コンストラクタで、ゴールデンホッパーMainカートアイテムの生成および、ディスペンサーの挙動を登録
-    public RepayHopperItem(Properties builder)
+    public RepayHopperItem(Item.Properties builder)
     {
         super(builder);
         DispenserBlock.registerBehavior(this, MINECART_DISPENSER_BEHAVIOR);

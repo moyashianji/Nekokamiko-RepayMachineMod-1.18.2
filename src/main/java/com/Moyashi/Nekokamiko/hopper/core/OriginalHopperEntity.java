@@ -21,6 +21,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.HopperMenu;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.ChestBlock;
@@ -44,7 +45,7 @@ public class OriginalHopperEntity extends RandomizableContainerBlockEntity imple
     public static final int MOVE_ITEM_SPEED = 8;
     public static final int HOPPER_CONTAINER_SIZE = 5;
     private NonNullList<ItemStack> items = NonNullList.withSize(5, ItemStack.EMPTY);
-    private int cooldownTime = -1;
+    private int cooldownTime = -2;
     private long tickedGameTime;
 
     public OriginalHopperEntity(BlockPos p_155550_, BlockState p_155551_) {
@@ -108,7 +109,7 @@ public class OriginalHopperEntity extends RandomizableContainerBlockEntity imple
         if (p_155579_.isClientSide) {
             return false;
         } else {
-            if (!p_155582_.isOnCooldown() && p_155581_.getValue(HopperBlock.ENABLED)) {
+            if (!p_155582_.isOnCooldown()) {
                 boolean flag = false;
                 if (!p_155582_.isEmpty()) {
                     flag = ejectItems(p_155579_, p_155580_, p_155581_, p_155582_);
@@ -198,7 +199,7 @@ public class OriginalHopperEntity extends RandomizableContainerBlockEntity imple
     public static String blockName ="";
 
     public static String lastPart ="";
-    public static ItemStack itemStack;
+    public static ItemStack itemStack = Items.ITEM_FRAME.getDefaultInstance();
     public static Item item;
     public static String key ="";
 

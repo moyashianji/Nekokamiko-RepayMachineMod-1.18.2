@@ -31,16 +31,165 @@ public class HashMap {
     public static long conclusionValue;
    /// public static long i;
     public static Player player;
+    public static java.util.HashMap<String, Integer> itemmmap = new java.util.HashMap<>();
 
     public static void hashmap(){
-        java.util.HashMap<String, Integer> itemmmap = new java.util.HashMap<>();
 
-        //無限に手に入るアイテムは安く
+        itemmmap.put(Items.SMOOTH_STONE_SLAB.getRegistryName().toString(), 2);
+        itemmmap.put(Items.CUT_RED_SANDSTONE_SLAB.getRegistryName().toString(), 8);
+        itemmmap.put(Items.STONE_BRICK_SLAB.getRegistryName().toString(), 200);
+        itemmmap.put(Items.NETHER_BRICK_SLAB.getRegistryName().toString(), 50);
+        itemmmap.put(Items.QUARTZ_SLAB.getRegistryName().toString(), 1200);
+
+        itemmmap.put(Items.GRANITE.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_GRANITE.getRegistryName().toString(), 15);
+        itemmmap.put(Items.DIORITE.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_DIORITE.getRegistryName().toString(), 15);
+        itemmmap.put(Items.ANDESITE.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_ANDESITE.getRegistryName().toString(), 15);
+        itemmmap.put(Items.DEEPSLATE.getRegistryName().toString(), 10);
+        itemmmap.put(Items.COBBLED_DEEPSLATE.getRegistryName().toString(), 15);
+        itemmmap.put(Items.POLISHED_DEEPSLATE.getRegistryName().toString(), 20);
+        itemmmap.put(Items.COARSE_DIRT.getRegistryName().toString(), 5);
+        itemmmap.put(Items.PODZOL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.ROOTED_DIRT.getRegistryName().toString(), 5);
+        itemmmap.put(Items.RED_SAND.getRegistryName().toString(), 2);
+        itemmmap.put(Items.DEEPSLATE_COAL_ORE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.DEEPSLATE_IRON_ORE.getRegistryName().toString(), 125);
+        itemmmap.put(Items.DEEPSLATE_GOLD_ORE.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.DEEPSLATE_REDSTONE_ORE.getRegistryName().toString(), 75);
+        itemmmap.put(Items.DEEPSLATE_EMERALD_ORE.getRegistryName().toString(), 2000);
+        itemmmap.put(Items.DEEPSLATE_LAPIS_ORE.getRegistryName().toString(), 1500);
+        itemmmap.put(Items.DEEPSLATE_DIAMOND_ORE.getRegistryName().toString(), 10000);
+        itemmmap.put(Items.RAW_IRON_BLOCK.getRegistryName().toString(), 1000);
+        itemmmap.put(Items.RAW_COPPER_BLOCK.getRegistryName().toString(), 500);
+        itemmmap.put(Items.RAW_GOLD_BLOCK.getRegistryName().toString(), 20000);
+        itemmmap.put(Items.CRIMSON_STEM.getRegistryName().toString(), 10);
+        itemmmap.put(Items.WARPED_STEM.getRegistryName().toString(), 10);
+        itemmmap.put(Items.FERN.getRegistryName().toString(), 2);
+        itemmmap.put(Items.DEAD_BUSH.getRegistryName().toString(), 2);
+        itemmmap.put(Items.SUGAR_CANE.getRegistryName().toString(), 10);
+        itemmmap.put(Items.PETRIFIED_OAK_SLAB.getRegistryName().toString(), 0);
+        itemmmap.put(Items.COBBLESTONE_SLAB.getRegistryName().toString(), 1);
+        itemmmap.put(Items.RED_SANDSTONE.getRegistryName().toString(), 1);
+        itemmmap.put(Items.CUT_RED_SANDSTONE_SLAB.getRegistryName().toString(), 1);
+        itemmmap.put(Items.SMOOTH_QUARTZ.getRegistryName().toString(), 1400);
+        itemmmap.put(Items.SMOOTH_RED_SANDSTONE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.SMOOTH_SANDSTONE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.COBBLESTONE_STAIRS.getRegistryName().toString(), 1);
+        itemmmap.put(Items.SNOW_BLOCK.getRegistryName().toString(), 5);
+        itemmmap.put(Items.CARVED_PUMPKIN.getRegistryName().toString(), 90);
+        itemmmap.put(Items.JACK_O_LANTERN.getRegistryName().toString(), 120);
+        itemmmap.put(Items.INFESTED_STONE.getRegistryName().toString(), 1);
+        itemmmap.put(Items.INFESTED_COBBLESTONE.getRegistryName().toString(), 1);
+        itemmmap.put(Items.INFESTED_STONE_BRICKS.getRegistryName().toString(), 1);
+        itemmmap.put(Items.INFESTED_MOSSY_STONE_BRICKS.getRegistryName().toString(), 1);
+        itemmmap.put(Items.INFESTED_CRACKED_STONE_BRICKS.getRegistryName().toString(), 1);
+        itemmmap.put(Items.INFESTED_CHISELED_STONE_BRICKS.getRegistryName().toString(), 1);
+        itemmmap.put(Items.INFESTED_DEEPSLATE.getRegistryName().toString(), 1);
+        itemmmap.put(Items.STONE_BRICKS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.MOSSY_STONE_BRICKS.getRegistryName().toString(), 15);
+        itemmmap.put(Items.CRACKED_STONE_BRICKS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DEEPSLATE_BRICKS.getRegistryName().toString(), 25);
+        itemmmap.put(Items.CRACKED_DEEPSLATE_BRICKS.getRegistryName().toString(), 20);
+        itemmmap.put(Items.DEEPSLATE_TILES.getRegistryName().toString(), 30);
+        itemmmap.put(Items.CRACKED_DEEPSLATE_TILES.getRegistryName().toString(), 5);
+        itemmmap.put(Items.CHISELED_DEEPSLATE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.MUSHROOM_STEM.getRegistryName().toString(), 2);
+        itemmmap.put(Items.GLOW_LICHEN.getRegistryName().toString(), 2);
+        itemmmap.put(Items.COBBLESTONE_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.MOSSY_COBBLESTONE_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.BRICK_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.RED_SANDSTONE_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.COBBLED_DEEPSLATE_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_DEEPSLATE_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DEEPSLATE_BRICK_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DEEPSLATE_TILE_WALL.getRegistryName().toString(), 5);
+        itemmmap.put(Items.CHISELED_QUARTZ_BLOCK.getRegistryName().toString(), 1280);
+        itemmmap.put(Items.QUARTZ_PILLAR.getRegistryName().toString(), 1280);
+        itemmmap.put(Items.QUARTZ_BLOCK.getRegistryName().toString(), 1280);
+        itemmmap.put(Items.DIRT_PATH.getRegistryName().toString(), 12);
+        itemmmap.put(Items.TALL_GRASS.getRegistryName().toString(), 2);
+        itemmmap.put(Items.LARGE_FERN.getRegistryName().toString(), 2);
+
+        itemmmap.put(Items.PRISMARINE_BRICKS.getRegistryName().toString(), 50);
+        itemmmap.put(Items.DARK_PRISMARINE.getRegistryName().toString(), 50);
+        itemmmap.put(Items.CHISELED_RED_SANDSTONE.getRegistryName().toString(), 20);
+        itemmmap.put(Items.CUT_RED_SANDSTONE.getRegistryName().toString(), 25);
+        itemmmap.put(Items.WARPED_WART_BLOCK.getRegistryName().toString(), 300);
+        itemmmap.put(Items.COBBLED_DEEPSLATE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_DEEPSLATE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DEEPSLATE_BRICK_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DEEPSLATE_TILE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.COBBLED_DEEPSLATE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_DEEPSLATE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DEEPSLATE_BRICK_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DEEPSLATE_TILE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.SLIME_BLOCK.getRegistryName().toString(), 100);
+        itemmmap.put(Items.OBSERVER.getRegistryName().toString(), 500);
+        itemmmap.put(Items.WARPED_FUNGUS_ON_A_STICK.getRegistryName().toString(), 100);
+        itemmmap.put(Items.LAPIS_LAZULI.getRegistryName().toString(), 220);
+        itemmmap.put(Items.RAW_IRON.getRegistryName().toString(), 100);
+        itemmmap.put(Items.RAW_COPPER.getRegistryName().toString(), 50);
+        itemmmap.put(Items.RAW_GOLD.getRegistryName().toString(), 2000);
+        itemmmap.put(Items.CRIMSON_SIGN.getRegistryName().toString(), 5);
+        itemmmap.put(Items.WARPED_SIGN.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POWDER_SNOW_BUCKET.getRegistryName().toString(), 150);
+        itemmmap.put(Items.PUFFERFISH_BUCKET.getRegistryName().toString(), 350);
+        itemmmap.put(Items.SALMON_BUCKET.getRegistryName().toString(), 450);
+        itemmmap.put(Items.COD_BUCKET.getRegistryName().toString(), 210);
+        itemmmap.put(Items.TROPICAL_FISH_BUCKET.getRegistryName().toString(), 500);
+        itemmmap.put(Items.AXOLOTL_BUCKET.getRegistryName().toString(), 3000);
+        itemmmap.put(Items.INK_SAC.getRegistryName().toString(), 30);
+        itemmmap.put(Items.GLOW_INK_SAC.getRegistryName().toString(), 60);
+        itemmmap.put(Items.COCOA_BEANS.getRegistryName().toString(), 40);
+        itemmmap.put(Items.BONE_MEAL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.MELON_SLICE.getRegistryName().toString(), 8);
+        itemmmap.put(Items.GLOW_ITEM_FRAME.getRegistryName().toString(), 100);
+        itemmmap.put(Items.LEATHER_HORSE_ARMOR.getRegistryName().toString(), 400);
+        itemmmap.put(Items.BEETROOT_SEEDS.getRegistryName().toString(), 2);
+        itemmmap.put(Items.SPLASH_POTION.getRegistryName().toString(), 10);
+        itemmmap.put(Items.LINGERING_POTION.getRegistryName().toString(), 10);
+        itemmmap.put(Items.TOTEM_OF_UNDYING.getRegistryName().toString(), 100000);
+        itemmmap.put(Items.IRON_NUGGET.getRegistryName().toString(), 55);
+        itemmmap.put(Items.FLOWER_BANNER_PATTERN.getRegistryName().toString(), 40);
+        itemmmap.put(Items.CREEPER_BANNER_PATTERN.getRegistryName().toString(), 40);
+        itemmmap.put(Items.SKULL_BANNER_PATTERN.getRegistryName().toString(), 40);
+        itemmmap.put(Items.MOJANG_BANNER_PATTERN.getRegistryName().toString(), 40);
+        itemmmap.put(Items.GLOBE_BANNER_PATTERN.getRegistryName().toString(), 40);
+        itemmmap.put(Items.PIGLIN_BANNER_PATTERN.getRegistryName().toString(), 40);
+        itemmmap.put(Items.BLACKSTONE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_BRICK_SLAB.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.TRIDENT.getRegistryName().toString(), 30000);
+        itemmmap.put(Items.CROSSBOW.getRegistryName().toString(), 1000);
+        itemmmap.put(Items.SPECTRAL_ARROW.getRegistryName().toString(), 500);
+        itemmmap.put(Items.TIPPED_ARROW.getRegistryName().toString(), 300);
+        itemmmap.put(Items.NETHERITE_SWORD.getRegistryName().toString(), 80000);
+        itemmmap.put(Items.NETHERITE_AXE.getRegistryName().toString(), 120000);
+        itemmmap.put(Items.NETHERITE_PICKAXE.getRegistryName().toString(), 120000);
+        itemmmap.put(Items.NETHERITE_SHOVEL.getRegistryName().toString(), 40000);
+        itemmmap.put(Items.NETHERITE_HOE.getRegistryName().toString(), 80000);
+
+        itemmmap.put(Items.SPYGLASS.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.NETHERITE_HELMET.getRegistryName().toString(), 200000);
+        itemmmap.put(Items.NETHERITE_CHESTPLATE.getRegistryName().toString(), 320000);
+        itemmmap.put(Items.NETHERITE_LEGGINGS.getRegistryName().toString(), 280000);
+        itemmmap.put(Items.NETHERITE_BOOTS.getRegistryName().toString(), 160000);
+
+        itemmmap.put(Items.TURTLE_HELMET.getRegistryName().toString(), 6000);
+        itemmmap.put(Items.SCUTE.getRegistryName().toString(), 3000);
+        itemmmap.put(Items.NAUTILUS_SHELL.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.PHANTOM_MEMBRANE.getRegistryName().toString(), 500);
 
         //建築 Block
         itemmmap.put(Blocks.STONE.getRegistryName().toString(), 1);
+        itemmmap.put(Items.WET_SPONGE.getRegistryName().toString(), 30);
 
-        itemmmap.put(Blocks.GRASS.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.GRASS_BLOCK.getRegistryName().toString(), 10);
+        itemmmap.put(Items.GRASS.getRegistryName().toString(), 1);
+
         itemmmap.put(Blocks.DIRT.getRegistryName().toString(), 5);
         itemmmap.put(Blocks.COBBLESTONE.getRegistryName().toString(), 0);
 
@@ -59,13 +208,18 @@ public class HashMap {
 
         itemmmap.put(Blocks.GOLD_BLOCK.getRegistryName().toString(), 36000);
         itemmmap.put(Blocks.IRON_BLOCK.getRegistryName().toString(), 4500);
-       // itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 0.getRegistryName().toString(), 2);//焼石
+
+        itemmmap.put(Items.CHISELED_SANDSTONE.getRegistryName().toString(), 16);
+        itemmmap.put(Items.CUT_SANDSTONE.getRegistryName().toString(), 16);
+        itemmmap.put(Items.POWERED_RAIL.getRegistryName().toString(), 4100);
+
+        // itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 0.getRegistryName().toString(), 2);//焼石
        // itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 1.getRegistryName().toString(), 8);//砂岩
 //itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 3.getRegistryName().toString(), 0);//石
        // itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 4.getRegistryName().toString(), 200);//レンガ
        //itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 5.getRegistryName().toString(), 12);//石レンガ
        // itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 6.getRegistryName().toString(), 50);//ネザーレンガ
-       // itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 7.getRegistryName().toString(), 1200);//水晶
+       //itemmmap.put(Blocks.DOUBLE_STONE_SLAB, 1, 7.getRegistryName().toString(), 1200);//水晶
         //ハーフ
        // itemmmap.put(Blocks.STONE_SLAB, 1, 0.getRegistryName().toString(), 1);//焼石
        /// itemmmap.put(Blocks.STONE_SLAB, 1, 1.getRegistryName().toString(), 4);//砂岩
@@ -75,6 +229,57 @@ public class HashMap {
        // itemmmap.put(Blocks.STONE_SLAB, 1, 6.getRegistryName().toString(), 25);//ネザーレンガ
        // itemmmap.put(Blocks.STONE_SLAB, 1, 7.getRegistryName().toString(), 600);//水晶
         //
+        itemmmap.put(Items.WHITE_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.ORANGE_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.MAGENTA_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.LIGHT_BLUE_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.CYAN_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.PURPLE_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.BLUE_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.BROWN_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.GREEN_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.RED_WOOL.getRegistryName().toString(), 60);
+        itemmmap.put(Items.LIGHT_GRAY_WOOL.getRegistryName().toString(), 60);//骨
+        itemmmap.put(Items.YELLOW_WOOL.getRegistryName().toString(), 60);//骨
+        itemmmap.put(Items.PINK_WOOL.getRegistryName().toString(), 60);//骨
+        itemmmap.put(Items.LIME_WOOL.getRegistryName().toString(), 60);//骨
+        itemmmap.put(Items.GRAY_WOOL.getRegistryName().toString(), 60);//骨
+        itemmmap.put(Items.BLACK_WOOL.getRegistryName().toString(), 60);//骨
+
+        itemmmap.put(Items.WHITE_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.ORANGE_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.MAGENTA_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.LIGHT_BLUE_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.CYAN_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.PURPLE_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.BLUE_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.BROWN_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.GREEN_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.RED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.LIGHT_GRAY_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.YELLOW_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.PINK_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.LIME_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.GRAY_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.BLACK_TERRACOTTA.getRegistryName().toString(), 130);//骨
+
+        itemmmap.put(Items.WHITE_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.ORANGE_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.MAGENTA_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.LIGHT_BLUE_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.CYAN_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.PURPLE_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.BLUE_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.BROWN_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.GREEN_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.RED_STAINED_GLASS.getRegistryName().toString(), 12);
+        itemmmap.put(Items.LIGHT_GRAY_STAINED_GLASS.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.YELLOW_STAINED_GLASS.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.PINK_STAINED_GLASS.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.LIME_STAINED_GLASS.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.GRAY_STAINED_GLASS.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.BLACK_STAINED_GLASS.getRegistryName().toString(), 12);//骨
+
         itemmmap.put(Blocks.BRICKS.getRegistryName().toString(), 200);
         itemmmap.put(Blocks.BOOKSHELF.getRegistryName().toString(), 510);
         itemmmap.put(Blocks.MOSSY_COBBLESTONE.getRegistryName().toString(), 10);
@@ -147,26 +352,69 @@ public class HashMap {
 
         //装飾 BLOCK
 
-        //itemmmap.put(Blocks.BED.getRegistryName().toString(), -1);//ブロック状態のベッド
+        itemmmap.put(Items.WHITE_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.ORANGE_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.MAGENTA_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.LIGHT_BLUE_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.CYAN_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.PURPLE_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.BLUE_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.BROWN_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.GREEN_BED.getRegistryName().toString(), 200);
+        itemmmap.put(Items.RED_BED.getRegistryName().toString(), 200);
         itemmmap.put(Blocks.COBWEB.getRegistryName().toString(), 40);
+        itemmmap.put(Blocks.LIGHT_GRAY_BED.getRegistryName().toString(), 200);//骨
+        itemmmap.put(Blocks.YELLOW_BED.getRegistryName().toString(), 200);//骨
+        itemmmap.put(Blocks.PINK_BED.getRegistryName().toString(), 200);//骨
+        itemmmap.put(Blocks.LIME_BED.getRegistryName().toString(), 200);//骨
+        itemmmap.put(Blocks.GRAY_BED.getRegistryName().toString(), 200);//骨
+        itemmmap.put(Blocks.BLACK_BED.getRegistryName().toString(), 200);//骨
 
-        //itemmmap.put(Blocks.FLOWER.getRegistryName().toString(), 20);
+        itemmmap.put(Items.WHITE_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.ORANGE_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.MAGENTA_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.LIGHT_BLUE_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.CYAN_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.PURPLE_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.BLUE_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.BROWN_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.GREEN_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.RED_CARPET.getRegistryName().toString(), 1);
+        itemmmap.put(Items.LIGHT_GRAY_CARPET.getRegistryName().toString(), 1);//骨
+        itemmmap.put(Items.YELLOW_CARPET.getRegistryName().toString(), 1);//骨
+        itemmmap.put(Items.PINK_CARPET.getRegistryName().toString(), 1);//骨
+        itemmmap.put(Items.LIME_CARPET.getRegistryName().toString(), 1);//骨
+        itemmmap.put(Items.GRAY_CARPET.getRegistryName().toString(), 1);//骨
+        itemmmap.put(Items.BLACK_CARPET.getRegistryName().toString(), 1);//骨
+
+        itemmmap.put(Items.DANDELION.getRegistryName().toString(), 20);
+        itemmmap.put(Items.POPPY.getRegistryName().toString(), 20);
+        itemmmap.put(Items.BLUE_ORCHID.getRegistryName().toString(), 20);
+        itemmmap.put(Items.ALLIUM.getRegistryName().toString(), 20);
+        itemmmap.put(Items.AZURE_BLUET.getRegistryName().toString(), 20);
+        itemmmap.put(Items.RED_TULIP.getRegistryName().toString(), 20);
+        itemmmap.put(Items.ORANGE_TULIP.getRegistryName().toString(), 20);
+        itemmmap.put(Items.TORCH.getRegistryName().toString(), 20);
+        itemmmap.put(Items.WHITE_TULIP.getRegistryName().toString(), 20);
+        itemmmap.put(Items.PINK_TULIP.getRegistryName().toString(), 20);
+        itemmmap.put(Items.OXEYE_DAISY.getRegistryName().toString(), 20);
+        itemmmap.put(Items.CORNFLOWER.getRegistryName().toString(), 20);
+        itemmmap.put(Items.LILY_OF_THE_VALLEY.getRegistryName().toString(), 20);
+        itemmmap.put(Items.WITHER_ROSE.getRegistryName().toString(), 20);
+        itemmmap.put(Items.SUNFLOWER.getRegistryName().toString(), 20);
+        itemmmap.put(Items.LILAC.getRegistryName().toString(), 20);
+        itemmmap.put(Items.ROSE_BUSH.getRegistryName().toString(), 20);
+        itemmmap.put(Items.PEONY.getRegistryName().toString(), 20);
 
         itemmmap.put(Blocks.BROWN_MUSHROOM.getRegistryName().toString(), 15);
         itemmmap.put(Blocks.RED_MUSHROOM.getRegistryName().toString(), 15);
         itemmmap.put(Blocks.TORCH.getRegistryName().toString(), 10);
         itemmmap.put(Blocks.FIRE.getRegistryName().toString(), -1);
-        //itemmmap.put(Blocks.MOB_SPAWNER.getRegistryName().toString(), -1);
         itemmmap.put(Blocks.CHEST.getRegistryName().toString(), 50);
         itemmmap.put(Blocks.CRAFTING_TABLE.getRegistryName().toString(), 20);
         itemmmap.put(Blocks.FURNACE.getRegistryName().toString(), 10);
-        //itemmmap.put(Blocks.LIT_FURNACE.getRegistryName().toString(), -1);//火のついたカマド
-       // itemmmap.put(Blocks.STANDING_SIGN.getRegistryName().toString(), -1);//看板
         itemmmap.put(Blocks.LADDER.getRegistryName().toString(), 5);
-        //itemmmap.put(Blocks.WALL_SIGN.getRegistryName().toString(), -1);//壁看板
-        //itemmmap.put(Blocks.SNOW_LAYER.getRegistryName().toString(), -1);//浅い雪
         itemmmap.put(Blocks.CACTUS.getRegistryName().toString(), 60);
-        //itemmmap.put(Blocks.REEDS.getRegistryName().toString(), -1);//ブロックのサトウキビ
         itemmmap.put(Blocks.JUKEBOX.getRegistryName().toString(), 10250);
         itemmmap.put(Blocks.OAK_FENCE.getRegistryName().toString(), 8);//フェンス
         itemmmap.put(Blocks.SPRUCE_FENCE.getRegistryName().toString(), 8);
@@ -180,7 +428,25 @@ public class HashMap {
         itemmmap.put(Blocks.IRON_BARS.getRegistryName().toString(), 190);
         itemmmap.put(Blocks.GLASS_PANE.getRegistryName().toString(), 12);
         itemmmap.put(Blocks.VINE.getRegistryName().toString(), 1);
-       // itemmmap.put(Blocks.WATERLILY.getRegistryName().toString(), 1);
+        itemmmap.put(Blocks.LILY_PAD.getRegistryName().toString(), 1);
+
+        itemmmap.put(Items.WHITE_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.ORANGE_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.MAGENTA_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.LIGHT_BLUE_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.CYAN_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.PURPLE_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.BLUE_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.BROWN_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.GREEN_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.RED_STAINED_GLASS_PANE.getRegistryName().toString(), 12);
+        itemmmap.put(Items.LIGHT_GRAY_STAINED_GLASS_PANE.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.YELLOW_STAINED_GLASS_PANE.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.PINK_STAINED_GLASS_PANE.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.LIME_STAINED_GLASS_PANE.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.GRAY_STAINED_GLASS_PANE.getRegistryName().toString(), 12);//骨
+        itemmmap.put(Items.BLACK_STAINED_GLASS_PANE.getRegistryName().toString(), 12);//骨
+
         itemmmap.put(Blocks.NETHER_BRICK_FENCE.getRegistryName().toString(), 12);
         itemmmap.put(Blocks.ENCHANTING_TABLE.getRegistryName().toString(), 22000);
         itemmmap.put(Blocks.END_PORTAL.getRegistryName().toString(), -1);
@@ -188,9 +454,11 @@ public class HashMap {
         itemmmap.put(Blocks.ENDER_CHEST.getRegistryName().toString(), 150);
         itemmmap.put(Blocks.FLOWER_POT.getRegistryName().toString(), -1);//植木鉢
         itemmmap.put(Blocks.SKELETON_SKULL.getRegistryName().toString(), -1);//頭
-        //itemmmap.put(Blocks.ANVIL, 1, 0.getRegistryName().toString(), 16000);
-        //itemmmap.put(Blocks.ANVIL, 1, 1.getRegistryName().toString(), -1);//少し壊れた金床
-        //itemmmap.put(Blocks.ANVIL, 1, 2.getRegistryName().toString(), -1);//壊れた金床
+
+        itemmmap.put(Blocks.ANVIL.getRegistryName().toString(), 16000);//壊れた金床
+        itemmmap.put(Blocks.CHIPPED_ANVIL.getRegistryName().toString(), -1);//壊れた金床
+        itemmmap.put(Blocks.DAMAGED_ANVIL.getRegistryName().toString(), -1);//壊れた金床
+
         itemmmap.put(Blocks.TRAPPED_CHEST.getRegistryName().toString(), 520);
 
         itemmmap.put(Blocks.CAVE_VINES_PLANT.getRegistryName().toString(), 20);
@@ -198,10 +466,7 @@ public class HashMap {
         itemmmap.put(Blocks.KELP_PLANT.getRegistryName().toString(), 1);
         itemmmap.put(Blocks.TWISTING_VINES_PLANT.getRegistryName().toString(), 1);
         itemmmap.put(Blocks.WEEPING_VINES_PLANT.getRegistryName().toString(), 20);
-       // itemmmap.put(Blocks, 1, 5.getRegistryName().toString(), 20);
 
-        //itemmmap.put(Blocks.STANDING_BANNER, 1, 0.getRegistryName().toString(), -1);
-       // itemmmap.put(Blocks.WALL_BANNER, 1, 0.getRegistryName().toString(), -1);
         itemmmap.put(Blocks.END_ROD.getRegistryName().toString(),  5);
         itemmmap.put(Blocks.CHORUS_PLANT.getRegistryName().toString(), -1);
         itemmmap.put(Blocks.CHORUS_FLOWER.getRegistryName().toString(),  -1);
@@ -209,27 +474,106 @@ public class HashMap {
         itemmmap.put(Blocks.STRUCTURE_BLOCK.getRegistryName().toString(),-1);
         //装飾 ITEM
         itemmmap.put(Items.PAINTING.getRegistryName().toString(), 20);
-        //itemmmap.put(Items.SIGN.getRegistryName().toString(), 24);
-        //itemmmap.put(Items.BED.getRegistryName().toString(), 200);
+
+        itemmmap.put(Blocks.ACACIA_LOG.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.BIRCH_LOG.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.JUNGLE_LOG.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.OAK_LOG.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.SPRUCE_LOG.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.DARK_OAK_LOG.getRegistryName().toString(), 10);
+
         itemmmap.put(Items.ITEM_FRAME.getRegistryName().toString(), 60);
         itemmmap.put(Items.FLOWER_POT.getRegistryName().toString(), 150);
-        //itemmmap.put(Items.SKULL.getRegistryName().toString(), 50);
-        //itemmmap.put(Items.SKULL, 1, 1.getRegistryName().toString(), 50);
-        //itemmmap.put(Items.SKULL, 1, 2.getRegistryName().toString(), 50);
-        //itemmmap.put(Items.SKULL, 1, 3.getRegistryName().toString(), 50);
-        //itemmmap.put(Items.SKULL, 1, 4.getRegistryName().toString(), 50);
-        //itemmmap.put(Items.SKULL, 1, 5.getRegistryName().toString(), 15000);
-        //itemmmap.put(Items.ARMOR_STAND, 1, 0.getRegistryName().toString(), 30);
-        //itemmmap.put(Items.BANNER, 1, OreDictionary.WILDCARD_VALUE.getRegistryName().toString(), 400);
-        //itemmmap.put(Items.END_CRYSTAL, 1, 0.getRegistryName().toString(), -1);
+
+        itemmmap.put(Items.SKELETON_SKULL.getRegistryName().toString(), 50);
+        itemmmap.put(Items.WITHER_SKELETON_SKULL.getRegistryName().toString(), 15000);
+
+        itemmmap.put(Items.ARMOR_STAND.getRegistryName().toString(), 30);
+
+        itemmmap.put(Items.ACACIA_SLAB.getRegistryName().toString(), 4);
+        itemmmap.put(Items.BIRCH_SLAB.getRegistryName().toString(), 4);
+        itemmmap.put(Items.JUNGLE_SLAB.getRegistryName().toString(), 4);
+        itemmmap.put(Items.OAK_SLAB.getRegistryName().toString(), 4);
+        itemmmap.put(Items.SPRUCE_SLAB.getRegistryName().toString(), 4);
+        itemmmap.put(Items.DARK_OAK_SLAB.getRegistryName().toString(), 4);
+
+        itemmmap.put(Items.DEAD_TUBE_CORAL_FAN.getRegistryName().toString(), 300);
+        itemmmap.put(Items.DEAD_BRAIN_CORAL_FAN.getRegistryName().toString(), 300);
+        itemmmap.put(Items.DEAD_BUBBLE_CORAL_FAN.getRegistryName().toString(), 300);
+        itemmmap.put(Items.DEAD_FIRE_CORAL_FAN.getRegistryName().toString(), 300);
+        itemmmap.put(Items.DEAD_HORN_CORAL_FAN.getRegistryName().toString(), 300);
+
+        itemmmap.put(Items.DEAD_TUBE_CORAL_BLOCK.getRegistryName().toString(), 600);
+        itemmmap.put(Items.DEAD_BRAIN_CORAL_BLOCK.getRegistryName().toString(), 600);
+        itemmmap.put(Items.DEAD_BUBBLE_CORAL_BLOCK.getRegistryName().toString(), 600);
+        itemmmap.put(Items.DEAD_FIRE_CORAL_BLOCK.getRegistryName().toString(), 600);
+        itemmmap.put(Items.DEAD_HORN_CORAL_BLOCK.getRegistryName().toString(), 600);
+
+        itemmmap.put(Items.OAK_SAPLING.getRegistryName().toString(), 2);
+        itemmmap.put(Items.SPRUCE_SAPLING.getRegistryName().toString(), 2);
+        itemmmap.put(Items.BIRCH_SAPLING.getRegistryName().toString(), 2);
+        itemmmap.put(Items.JUNGLE_SAPLING.getRegistryName().toString(), 2);
+        itemmmap.put(Items.ACACIA_SAPLING.getRegistryName().toString(), 2);
+        itemmmap.put(Items.DARK_OAK_SAPLING.getRegistryName().toString(), 2);
+
+        itemmmap.put(Items.OAK_LEAVES.getRegistryName().toString(), 3);
+        itemmmap.put(Items.SPRUCE_LEAVES.getRegistryName().toString(), 3);
+        itemmmap.put(Items.BIRCH_LEAVES.getRegistryName().toString(), 3);
+        itemmmap.put(Items.JUNGLE_LEAVES.getRegistryName().toString(), 3);
+        itemmmap.put(Items.ACACIA_LEAVES.getRegistryName().toString(), 3);
+        itemmmap.put(Items.DARK_OAK_LEAVES.getRegistryName().toString(), 3);
+
+        itemmmap.put(Items.OAK_PLANKS.getRegistryName().toString(), 4);
+        itemmmap.put(Items.SPRUCE_PLANKS.getRegistryName().toString(), 4);
+        itemmmap.put(Items.BIRCH_PLANKS.getRegistryName().toString(), 4);
+        itemmmap.put(Items.JUNGLE_PLANKS.getRegistryName().toString(), 4);
+        itemmmap.put(Items.ACACIA_PLANKS.getRegistryName().toString(), 4);
+        itemmmap.put(Items.DARK_OAK_PLANKS.getRegistryName().toString(), 4);
+
+        itemmmap.put(Items.WHITE_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.ORANGE_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.MAGENTA_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.LIGHT_BLUE_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.CYAN_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.PURPLE_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.BLUE_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.BROWN_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.GREEN_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.RED_BANNER.getRegistryName().toString(), 400);
+        itemmmap.put(Items.COBWEB.getRegistryName().toString(), 40);
+        itemmmap.put(Items.LIGHT_GRAY_BANNER.getRegistryName().toString(), 400);//骨
+        itemmmap.put(Items.YELLOW_BANNER.getRegistryName().toString(), 400);//骨
+        itemmmap.put(Items.PINK_BANNER.getRegistryName().toString(), 400);//骨
+        itemmmap.put(Items.LIME_BANNER.getRegistryName().toString(), 400);//骨
+        itemmmap.put(Items.GRAY_BANNER.getRegistryName().toString(), 400);//骨
+        itemmmap.put(Items.BLACK_BANNER.getRegistryName().toString(), 400);//骨
+
+        itemmmap.put(Items.WHITE_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.ORANGE_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.MAGENTA_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.LIGHT_BLUE_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.CYAN_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.PURPLE_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.BLUE_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.BROWN_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.GREEN_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.RED_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);
+        itemmmap.put(Items.LIGHT_GRAY_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.YELLOW_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.PINK_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.LIME_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.GRAY_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);//骨
+        itemmmap.put(Items.BLACK_GLAZED_TERRACOTTA.getRegistryName().toString(), 130);//骨
+
+        itemmmap.put(Items.END_CRYSTAL.getRegistryName().toString(), -1);
 
         //レッドストーン BLOCK
         itemmmap.put(Blocks.DISPENSER.getRegistryName().toString(), 200);
-       // itemmmap.put(Blocks.NOTEBLOCK.getRegistryName().toString(), 120);
+        itemmmap.put(Blocks.NOTE_BLOCK.getRegistryName().toString(), 120);
+
         itemmmap.put(Blocks.STICKY_PISTON.getRegistryName().toString(), 800);
         itemmmap.put(Blocks.PISTON.getRegistryName().toString(), 700);
         itemmmap.put(Blocks.PISTON_HEAD.getRegistryName().toString(), -1);//ピストンの先
-       // itemmmap.put(Blocks.PISTON_EXTENSION.getRegistryName().toString(), -1);
         itemmmap.put(Blocks.TNT.getRegistryName().toString(), 80);
         itemmmap.put(Blocks.REDSTONE_WIRE.getRegistryName().toString(), -1);
         itemmmap.put(Blocks.OAK_DOOR.getRegistryName().toString(), -1);//木のドア
@@ -241,14 +585,26 @@ public class HashMap {
         itemmmap.put(Blocks.LEVER.getRegistryName().toString(), 55);
         itemmmap.put(Blocks.STONE_PRESSURE_PLATE.getRegistryName().toString(), 5);
         itemmmap.put(Blocks.IRON_DOOR.getRegistryName().toString(), -1);//鉄のドア
-       // itemmmap.put(Blocks.WOODEN_PRESSURE_PLATE.getRegistryName().toString(), 10);
-        //itemmmap.put(Blocks.UNLIT_REDSTONE_TORCH.getRegistryName().toString(), -1);//消え);いるレッドストーンTOUCH
+
+        itemmmap.put(Blocks.ACACIA_PRESSURE_PLATE.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.BIRCH_PRESSURE_PLATE.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.JUNGLE_PRESSURE_PLATE.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.OAK_PRESSURE_PLATE.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.SPRUCE_PRESSURE_PLATE.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.DARK_OAK_PRESSURE_PLATE.getRegistryName().toString(), 10);
+
         itemmmap.put(Blocks.REDSTONE_TORCH.getRegistryName().toString(), 45);
         itemmmap.put(Blocks.STONE_BUTTON.getRegistryName().toString(), 1);
-       // itemmmap.put(Blocks.UNPOWERED_REPEATER.getRegistryName().toString(), -1);
-        ///itemmmap.put(Blocks.POWERED_REPEATER.getRegistryName().toString(), -1);
-        //itemmmap.put(Blocks.TRAPDOOR.getRegistryName().toString(), 15);
+        itemmmap.put(Blocks.REPEATER.getRegistryName().toString(), 1);
+
+        itemmmap.put(Blocks.ACACIA_TRAPDOOR.getRegistryName().toString(), 15);
+        itemmmap.put(Blocks.BIRCH_TRAPDOOR.getRegistryName().toString(), 15);
+        itemmmap.put(Blocks.JUNGLE_TRAPDOOR.getRegistryName().toString(), 15);
+        itemmmap.put(Blocks.OAK_TRAPDOOR.getRegistryName().toString(), 15);
+        itemmmap.put(Blocks.SPRUCE_TRAPDOOR.getRegistryName().toString(), 15);
+        itemmmap.put(Blocks.DARK_OAK_TRAPDOOR.getRegistryName().toString(), 15);
         itemmmap.put(Blocks.IRON_TRAPDOOR.getRegistryName().toString(), 1200);
+
         itemmmap.put(Blocks.OAK_FENCE_GATE.getRegistryName().toString(), 10);//フェンスゲート
         itemmmap.put(Blocks.SPRUCE_FENCE_GATE.getRegistryName().toString(), 10);//フェンスゲート
         itemmmap.put(Blocks.BIRCH_FENCE_GATE.getRegistryName().toString(), 10);//フェンスゲート
@@ -256,15 +612,20 @@ public class HashMap {
         itemmmap.put(Blocks.DARK_OAK_FENCE_GATE.getRegistryName().toString(), 10);//フェンスゲート
         itemmmap.put(Blocks.ACACIA_FENCE_GATE.getRegistryName().toString(), 10);//フェンスゲート
         itemmmap.put(Blocks.REDSTONE_LAMP.getRegistryName().toString(), 1500);
-       // itemmmap.put(Blocks.LIT_REDSTONE_LAMP.getRegistryName().toString(), -1);
         itemmmap.put(Blocks.TRIPWIRE_HOOK.getRegistryName().toString(), 250);
         itemmmap.put(Blocks.TRIPWIRE.getRegistryName().toString(), -1);//糸
         itemmmap.put(Blocks.COMMAND_BLOCK.getRegistryName().toString(), -1);//コマンドブロック
-       // itemmmap.put(Blocks.WOODEN.getRegistryName().toString(), 5);
+
+        itemmmap.put(Blocks.ACACIA_WOOD.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.BIRCH_WOOD.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.JUNGLE_WOOD.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.OAK_WOOD.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.SPRUCE_WOOD.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.DARK_OAK_WOOD.getRegistryName().toString(), 5);
+
         itemmmap.put(Blocks.LIGHT_WEIGHTED_PRESSURE_PLATE.getRegistryName().toString(), 8000);
         itemmmap.put(Blocks.HEAVY_WEIGHTED_PRESSURE_PLATE.getRegistryName().toString(), 1000);
-       // itemmmap.put(Blocks.UNPOWERED_COMPARATOR.getRegistryName().toString(), -1);
-        //itemmmap.put(Blocks.POWERED_COMPARATOR.getRegistryName().toString(), -1);
+        itemmmap.put(Blocks.COMPARATOR.getRegistryName().toString(), -1);
         itemmmap.put(Blocks.DAYLIGHT_DETECTOR.getRegistryName().toString(), 1000);
         itemmmap.put(Blocks.REDSTONE_BLOCK.getRegistryName().toString(), 360);
         itemmmap.put(Blocks.HOPPER.getRegistryName().toString(), 2600);
@@ -284,14 +645,19 @@ public class HashMap {
         itemmmap.put(Items.COMPARATOR.getRegistryName().toString(), 210);
 
         //移動 BLOCK
-        //itemmmap.put(Blocks.GOLDEN_RAIL.getRegistryName().toString(), 4100);
         itemmmap.put(Blocks.DETECTOR_RAIL.getRegistryName().toString(), 600);
         itemmmap.put(Blocks.RAIL.getRegistryName().toString(), 250);
         itemmmap.put(Blocks.ACTIVATOR_RAIL.getRegistryName().toString(), 600);
         //移動 ITEM
         itemmmap.put(Items.MINECART.getRegistryName().toString(), 800);
         itemmmap.put(Items.SADDLE.getRegistryName().toString(), 40);
-        //itemmmap.put(Items.BOAT.getRegistryName().toString(), 30);
+
+        itemmmap.put(Items.ACACIA_BOAT.getRegistryName().toString(), 30);
+        itemmmap.put(Items.JUNGLE_BOAT.getRegistryName().toString(), 30);
+        itemmmap.put(Items.BIRCH_BOAT.getRegistryName().toString(), 30);
+        itemmmap.put(Items.SPRUCE_BOAT.getRegistryName().toString(), 30);
+        itemmmap.put(Items.OAK_BOAT.getRegistryName().toString(), 30);
+
         itemmmap.put(Items.SPRUCE_BOAT.getRegistryName().toString(), 30);
         itemmmap.put(Items.BIRCH_BOAT.getRegistryName().toString(), 30);
         itemmmap.put(Items.JUNGLE_BOAT.getRegistryName().toString(), 30);
@@ -303,7 +669,7 @@ public class HashMap {
         itemmmap.put(Items.TNT_MINECART.getRegistryName().toString(), 800);
         itemmmap.put(Items.HOPPER_MINECART.getRegistryName().toString(), 980);
         itemmmap.put(Items.COMMAND_BLOCK_MINECART.getRegistryName().toString(), -1);
-        itemmmap.put(Items.ELYTRA.getRegistryName().toString(), 600);
+        itemmmap.put(Items.ELYTRA.getRegistryName().toString(), 200000);
 
         //その他 BLOCK
         itemmmap.put(Blocks.BEACON.getRegistryName().toString(), 9000);
@@ -320,32 +686,19 @@ public class HashMap {
         itemmmap.put(Items.FILLED_MAP.getRegistryName().toString(), 1);
         itemmmap.put(Items.ENDER_PEARL.getRegistryName().toString(), 20);
         itemmmap.put(Items.ENDER_EYE.getRegistryName().toString(), 20);
-        //itemmmap.put(Items.SPAWN_EGG, 1, OreDictionary.WILDCARD_VALUE.getRegistryName().toString(), -1);
         itemmmap.put(Items.EXPERIENCE_BOTTLE.getRegistryName().toString(), 150);
         itemmmap.put(Items.FIRE_CHARGE.getRegistryName().toString(), 50);
         itemmmap.put(Items.WRITABLE_BOOK.getRegistryName().toString(), 180);
         itemmmap.put(Items.WRITTEN_BOOK.getRegistryName().toString(), -1);
         itemmmap.put(Items.MAP.getRegistryName().toString(), 10);
-        //itemmmap.put(Items.FIREWORKS, 1, OreDictionary.WILDCARD_VALUE.getRegistryName().toString(), 10);
-        //itemmmap.put(Items.FIREWORK_CHARGE, 1, OreDictionary.WILDCARD_VALUE.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.FIREWORK_ROCKET.getRegistryName().toString(), 10);
+        itemmmap.put(Items.FIREWORK_STAR.getRegistryName().toString(), 10);
+
         itemmmap.put(Items.IRON_HORSE_ARMOR.getRegistryName().toString(), 1000);
         itemmmap.put(Items.GOLDEN_HORSE_ARMOR.getRegistryName().toString(), 10000);
         itemmmap.put(Items.DIAMOND_HORSE_ARMOR.getRegistryName().toString(), 20000);
         itemmmap.put("record", 500);
-        //itemmmap.put(Items.RECORD_11.getRegistryName().toString(), -1);
-
-        //        itemmmap.put(Items.RECORD_13.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_CAT.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_BLOCKS.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_CHIRP.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_FAR.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_MALL.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_MELLOHI.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_STAL.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_STRAD.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_WARD.getRegistryName().toString(), 500);
-        //        itemmmap.put(Items.RECORD_11.getRegistryName().toString(), -1);
-        //        itemmmap.put(Items.RECORD_WAIT.getRegistryName().toString(), 500);
 
         //食べ物 BLOCK
         itemmmap.put(Blocks.CAKE.getRegistryName().toString(), -1);//ブロックのケーキ
@@ -360,12 +713,15 @@ public class HashMap {
         itemmmap.put(Items.COOKED_PORKCHOP.getRegistryName().toString(), 28);
         itemmmap.put(Items.GOLDEN_APPLE.getRegistryName().toString(), 4000);
         itemmmap.put(Items.ENCHANTED_GOLDEN_APPLE.getRegistryName().toString(), 36000);
-       // itemmmap.put(Items.FISH, 1, 0.getRegistryName().toString(), 62);
-       // itemmmap.put(Items.FISH, 1, 1.getRegistryName().toString(), 272);//さけ
-       // itemmmap.put(Items.FISH, 1, 2.getRegistryName().toString(), 160);//くまのみ
-       // itemmmap.put(Items.FISH, 1, 3.getRegistryName().toString(), 104);//ふぐ
-       // itemmmap.put(Items.COOKED_FISH, 1, 0.getRegistryName().toString(), 70);
-//itemmmap.put(Items.COOKED_FISH, 1, 1.getRegistryName().toString(), 296);
+
+       itemmmap.put(Items.COD.getRegistryName().toString(), 62);
+       itemmmap.put(Items.SALMON.getRegistryName().toString(), 272);//さけ
+       itemmmap.put(Items.TROPICAL_FISH.getRegistryName().toString(), 160);//くまのみ
+       itemmmap.put(Items.PUFFERFISH.getRegistryName().toString(), 104);//ふぐ
+       itemmmap.put(Items.COOKED_SALMON.getRegistryName().toString(), 70);
+       itemmmap.put(Items.COOKED_COD.getRegistryName().toString(), 296);
+
+
         itemmmap.put(Items.CAKE.getRegistryName().toString(), 640);
         itemmmap.put(Items.COOKIE.getRegistryName().toString(), 22);
         itemmmap.put(Items.MELON.getRegistryName().toString(), 1);
@@ -454,7 +810,7 @@ public class HashMap {
         itemmmap.put(Blocks.CAULDRON.getRegistryName().toString(), -1);//ブロック状態の釜
         //ポーション ITEM
         itemmmap.put(Items.GHAST_TEAR.getRegistryName().toString(), 5);
-        //itemmmap.put(Items.POTIONITEM.getRegistryName().toString(), 1);//ポーションはまた今度
+        itemmmap.put(Items.POTION.getRegistryName().toString(), 1);//ポーションはまた今度
         itemmmap.put(Items.GLASS_BOTTLE.getRegistryName().toString(), 10);
         itemmmap.put(Items.FERMENTED_SPIDER_EYE.getRegistryName().toString(), 1);
         itemmmap.put(Items.BLAZE_POWDER.getRegistryName().toString(), 2);
@@ -462,12 +818,12 @@ public class HashMap {
         itemmmap.put(Items.BREWING_STAND.getRegistryName().toString(), 50);
         itemmmap.put(Items.CAULDRON.getRegistryName().toString(), 50);
         itemmmap.put(Items.BREWING_STAND.getRegistryName().toString(), 3500);
-        //itemmmap.put(Items.SPECKLED_MELON.getRegistryName().toString(), 650);
+        itemmmap.put(Items.GLISTERING_MELON_SLICE.getRegistryName().toString(), 650);
         itemmmap.put(Items.RABBIT_FOOT.getRegistryName().toString(), 320);
 
         //材料
-        //itemmmap.put(Items.COAL, 1, 0.getRegistryName().toString(), 50);
-        //itemmmap.put(Items.COAL, 1, 1.getRegistryName().toString(), 10);//木炭
+        itemmmap.put(Items.COAL.getRegistryName().toString(), 50);
+        itemmmap.put(Items.CHARCOAL.getRegistryName().toString(), 10);//木炭
         itemmmap.put(Items.DIAMOND.getRegistryName().toString(), 10000);
         itemmmap.put(Items.IRON_INGOT.getRegistryName().toString(), 500);
         itemmmap.put(Items.GOLD_INGOT.getRegistryName().toString(), 4000);
@@ -483,25 +839,28 @@ public class HashMap {
         itemmmap.put(Items.LEATHER.getRegistryName().toString(), 50);
         itemmmap.put(Items.BRICK.getRegistryName().toString(), 50);
         itemmmap.put(Items.CLAY_BALL.getRegistryName().toString(), 30);
-        //itemmmap.put(Items.REEDS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.LEAD.getRegistryName().toString(), 10);
         itemmmap.put(Items.EGG.getRegistryName().toString(), 3);
         itemmmap.put(Items.GLOWSTONE_DUST.getRegistryName().toString(), 100);
-        //itemmmap.put(Items.DYE, 1, 0.getRegistryName().toString(), 30);//染料 イカスミ
-       // itemmmap.put(Items.DYE, 1, 1.getRegistryName().toString(), 5);//染料
-        //itemmmap.put(Items.DYE, 1, 2.getRegistryName().toString(), 5);//染料
-        //itemmmap.put(Items.DYE, 1, 3.getRegistryName().toString(), 40);//染料 カカオ
-        //itemmmap.put(Items.DYE, 1, 4.getRegistryName().toString(), 220);//染料 ラピス
-        //itemmmap.put(Items.DYE, 1, 5.getRegistryName().toString(), 5);//染料
-       // itemmmap.put(Items.DYE, 1, 6.getRegistryName().toString(), 5);//染料
-        //itemmmap.put(Items.DYE, 1, 7.getRegistryName().toString(), 5);//染料
-       // itemmmap.put(Items.DYE, 1, 8.getRegistryName().toString(), 5);//染料
-       // itemmmap.put(Items.DYE, 1, 9.getRegistryName().toString(), 5);//染料
-        //itemmmap.put(Items.DYE, 1, 10.getRegistryName().toString(), 5);//染料
-       // itemmmap.put(Items.DYE, 1, 11.getRegistryName().toString(), 5);//染料
-        //itemmmap.put(Items.DYE, 1, 12.getRegistryName().toString(), 5);//染料
-       /// itemmmap.put(Items.DYE, 1, 13.getRegistryName().toString(), 5);//染料
-      //  itemmmap.put(Items.DYE, 1, 14.getRegistryName().toString(), 5);//染料
-       // itemmmap.put(Items.DYE, 1, 15.getRegistryName().toString(), 10);//染料 骨粉
+
+        itemmmap.put(Items.WHITE_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.ORANGE_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.MAGENTA_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.LIGHT_BLUE_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.CYAN_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.PURPLE_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.BLUE_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.BROWN_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.GREEN_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.RED_DYE.getRegistryName().toString(), 5);
+        itemmmap.put(Items.COBWEB.getRegistryName().toString(), 40);
+        itemmmap.put(Items.LIGHT_GRAY_DYE.getRegistryName().toString(), 5);//骨
+        itemmmap.put(Items.YELLOW_DYE.getRegistryName().toString(), 5);//骨
+        itemmmap.put(Items.PINK_DYE.getRegistryName().toString(), 5);//骨
+        itemmmap.put(Items.LIME_DYE.getRegistryName().toString(), 5);//骨
+        itemmmap.put(Items.GRAY_DYE.getRegistryName().toString(), 5);//骨
+        itemmmap.put(Items.BLACK_DYE.getRegistryName().toString(), 5);//骨
+
         itemmmap.put(Items.SUGAR.getRegistryName().toString(), 10);
         itemmmap.put(Items.PUMPKIN_SEEDS.getRegistryName().toString(), 2);
         itemmmap.put(Items.MELON_SEEDS.getRegistryName().toString(), 2);
@@ -510,15 +869,399 @@ public class HashMap {
         itemmmap.put(Items.NETHER_WART.getRegistryName().toString(), 10);
         itemmmap.put(Items.EMERALD.getRegistryName().toString(), 300);
         itemmmap.put(Items.NETHER_STAR.getRegistryName().toString(), 8000);
-       // itemmmap.put(Items.NETHERBRICK.getRegistryName().toString(), 20);
+        itemmmap.put(Items.NETHER_BRICK.getRegistryName().toString(), 20);
         itemmmap.put(Items.QUARTZ.getRegistryName().toString(), 300);
         itemmmap.put(Items.PRISMARINE_SHARD.getRegistryName().toString(), 5);
         itemmmap.put(Items.PRISMARINE_CRYSTALS.getRegistryName().toString(), 20);
         itemmmap.put(Items.RABBIT_HIDE.getRegistryName().toString(), 10);
         itemmmap.put(Items.CHORUS_FRUIT.getRegistryName().toString(), 4);
-      //  itemmmap.put(Items.CHORUS_FRUIT_POPPED.getRegistryName().toString(), 1);
-        itemmmap.put(Items.BEETROOT_SEEDS.getRegistryName().toString(), 2);
+        itemmmap.put(Items.POPPED_CHORUS_FRUIT.getRegistryName().toString(), 1);
+        /**
+         * 1.13
+         */
+        itemmmap.put(Items.BLUE_ICE.getRegistryName().toString(), 150);
+        itemmmap.put(Items.CONDUIT.getRegistryName().toString(), 150000);
+        itemmmap.put(Items.HEART_OF_THE_SEA.getRegistryName().toString(), 100000);
+        itemmmap.put(Items.TUBE_CORAL.getRegistryName().toString(), 300);
+        itemmmap.put(Items.BRAIN_CORAL.getRegistryName().toString(), 300);
+        itemmmap.put(Items.BUBBLE_CORAL.getRegistryName().toString(), 300);
+        itemmmap.put(Items.FIRE_CORAL.getRegistryName().toString(), 300);
+        itemmmap.put(Items.HORN_CORAL.getRegistryName().toString(), 300);
+        itemmmap.put(Items.DEAD_TUBE_CORAL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.DEAD_BRAIN_CORAL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.DEAD_BUBBLE_CORAL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.DEAD_FIRE_CORAL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.DEAD_HORN_CORAL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.TUBE_CORAL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Items.BRAIN_CORAL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Items.BUBBLE_CORAL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Items.FIRE_CORAL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Items.HORN_CORAL_FAN.getRegistryName().toString(), 250);
 
+        itemmmap.put(Blocks.TUBE_CORAL_WALL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Blocks.BRAIN_CORAL_WALL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Blocks.BUBBLE_CORAL_WALL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Blocks.FIRE_CORAL_WALL_FAN.getRegistryName().toString(), 250);
+        itemmmap.put(Blocks.HORN_CORAL_WALL_FAN.getRegistryName().toString(), 250);
+
+        itemmmap.put(Blocks.DEAD_TUBE_CORAL_WALL_FAN.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.DEAD_BRAIN_CORAL_WALL_FAN.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.DEAD_BUBBLE_CORAL_WALL_FAN.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.DEAD_FIRE_CORAL_WALL_FAN.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.DEAD_HORN_CORAL_WALL_FAN.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.TUBE_CORAL_BLOCK.getRegistryName().toString(), 500);
+        itemmmap.put(Items.BRAIN_CORAL_BLOCK.getRegistryName().toString(), 500);
+        itemmmap.put(Items.BUBBLE_CORAL_BLOCK.getRegistryName().toString(), 500);
+        itemmmap.put(Items.FIRE_CORAL_BLOCK.getRegistryName().toString(), 500);
+        itemmmap.put(Items.HORN_CORAL_BLOCK.getRegistryName().toString(), 500);
+
+        itemmmap.put(Items.KELP.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.KELP_PLANT.getRegistryName().toString(), 10);
+        itemmmap.put(Items.DRIED_KELP_BLOCK.getRegistryName().toString(), 30);
+        itemmmap.put(Items.DRIED_KELP.getRegistryName().toString(),300);
+        itemmmap.put(Items.SEAGRASS.getRegistryName().toString(), 30);
+        itemmmap.put(Blocks.TALL_SEAGRASS.getRegistryName().toString(), 30);
+        itemmmap.put(Items.SEA_PICKLE.getRegistryName().toString(), 50);
+        itemmmap.put(Items.TURTLE_EGG.getRegistryName().toString(), 3000);
+
+        itemmmap.put(Items.PRISMARINE_SLAB.getRegistryName().toString(), 10);
+        itemmmap.put(Items.PRISMARINE_BRICK_SLAB.getRegistryName().toString(), 25);
+        itemmmap.put(Items.DARK_PRISMARINE_SLAB.getRegistryName().toString(), 30);
+
+        itemmmap.put(Items.PRISMARINE_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.PRISMARINE_BRICK_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.DARK_PRISMARINE_STAIRS.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.OAK_WOOD.getRegistryName().toString(), 15);
+        itemmmap.put(Items.SPRUCE_WOOD.getRegistryName().toString(), 15);
+        itemmmap.put(Items.BIRCH_WOOD.getRegistryName().toString(), 15);
+        itemmmap.put(Items.JUNGLE_WOOD.getRegistryName().toString(), 15);
+        itemmmap.put(Items.ACACIA_WOOD.getRegistryName().toString(), 15);
+        itemmmap.put(Items.DARK_OAK_WOOD.getRegistryName().toString(), 15);
+        itemmmap.put(Items.CRIMSON_HYPHAE.getRegistryName().toString(), 15);
+        itemmmap.put(Items.WARPED_HYPHAE.getRegistryName().toString(), 15);
+
+        itemmmap.put(Items.STRIPPED_OAK_WOOD.getRegistryName().toString(), 40);
+        itemmmap.put(Items.STRIPPED_SPRUCE_WOOD.getRegistryName().toString(), 40);
+        itemmmap.put(Items.STRIPPED_BIRCH_WOOD.getRegistryName().toString(), 40);
+        itemmmap.put(Items.STRIPPED_JUNGLE_WOOD.getRegistryName().toString(), 40);
+        itemmmap.put(Items.STRIPPED_ACACIA_WOOD.getRegistryName().toString(), 40);
+        itemmmap.put(Items.STRIPPED_DARK_OAK_WOOD.getRegistryName().toString(), 40);
+        itemmmap.put(Items.STRIPPED_CRIMSON_HYPHAE.getRegistryName().toString(), 40);
+        itemmmap.put(Items.STRIPPED_WARPED_HYPHAE.getRegistryName().toString(), 40);
+
+        itemmmap.put(Items.STRIPPED_OAK_LOG.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_SPRUCE_LOG.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_BIRCH_LOG.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_JUNGLE_LOG.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_ACACIA_LOG.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_DARK_OAK_LOG.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_CRIMSON_STEM.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_WARPED_STEM.getRegistryName().toString(), 20);
+
+        itemmmap.put(Items.OAK_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.SPRUCE_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.BIRCH_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.JUNGLE_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.ACACIA_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DARK_OAK_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.CRIMSON_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.WARPED_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_BUTTON.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.PUMPKIN.getRegistryName().toString(), 70);
+        itemmmap.put(Items.SHULKER_SHELL.getRegistryName().toString(), 2000);
+
+        itemmmap.put(Items.SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.WHITE_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.ORANGE_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.MAGENTA_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.LIGHT_BLUE_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.CYAN_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.PURPLE_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.BLUE_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.BROWN_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.GREEN_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.RED_SHULKER_BOX.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.LIGHT_GRAY_SHULKER_BOX.getRegistryName().toString(), 5000);//骨
+        itemmmap.put(Items.YELLOW_SHULKER_BOX.getRegistryName().toString(), 5000);//骨
+        itemmmap.put(Items.PINK_SHULKER_BOX.getRegistryName().toString(), 5000);//骨
+        itemmmap.put(Items.LIME_SHULKER_BOX.getRegistryName().toString(), 5000);//骨
+        itemmmap.put(Items.GRAY_SHULKER_BOX.getRegistryName().toString(), 5000);//骨
+        itemmmap.put(Items.BLACK_SHULKER_BOX.getRegistryName().toString(), 5000);//骨
+
+        itemmmap.put(Items.SMOOTH_STONE.getRegistryName().toString(), 5);
+
+        /**
+         * 1.14
+         */
+        itemmmap.put(Items.BAMBOO.getRegistryName().toString(), 20);
+        itemmmap.put(Blocks.BAMBOO_SAPLING.getRegistryName().toString(), 20);
+        itemmmap.put(Items.SCAFFOLDING.getRegistryName().toString(), 25);
+        itemmmap.put(Items.CORNFLOWER.getRegistryName().toString(), 20);
+        itemmmap.put(Items.LILY_OF_THE_VALLEY.getRegistryName().toString(), 20);
+        itemmmap.put(Items.WITHER_ROSE.getRegistryName().toString(), 500);
+        itemmmap.put(Items.SWEET_BERRIES.getRegistryName().toString(), 30);
+        itemmmap.put(Blocks.SWEET_BERRY_BUSH.getRegistryName().toString(), 100);
+        itemmmap.put(Items.BARREL.getRegistryName().toString(), 50);
+
+        itemmmap.put(Items.BLAST_FURNACE.getRegistryName().toString(), 2750);
+        itemmmap.put(Items.SMOKER.getRegistryName().toString(), 75);
+        itemmmap.put(Items.LOOM.getRegistryName().toString(), 50);
+        itemmmap.put(Items.CARTOGRAPHY_TABLE.getRegistryName().toString(), 50);
+        itemmmap.put(Items.FLETCHING_TABLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.SMITHING_TABLE.getRegistryName().toString(), 1100);
+
+        itemmmap.put(Items.COMPOSTER.getRegistryName().toString(), 30);
+        itemmmap.put(Items.LECTERN.getRegistryName().toString(), 600);
+        itemmmap.put(Items.GRINDSTONE.getRegistryName().toString(), 50);
+        itemmmap.put(Items.STONECUTTER.getRegistryName().toString(), 600);
+        itemmmap.put(Items.BELL.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.CAMPFIRE.getRegistryName().toString(), 150);
+        itemmmap.put(Items.LANTERN.getRegistryName().toString(), 500);
+        itemmmap.put(Items.STONE_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.STONE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.MOSSY_COBBLESTONE_SLAB.getRegistryName().toString(), 15);
+        itemmmap.put(Items.MOSSY_STONE_BRICK_SLAB.getRegistryName().toString(), 20);
+
+        itemmmap.put(Items.ANDESITE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.GRANITE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DIORITE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_ANDESITE_SLAB.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_GRANITE_SLAB.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_DIORITE_SLAB.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.SMOOTH_RED_SANDSTONE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.SMOOTH_SANDSTONE_SLAB.getRegistryName().toString(), 5);
+        itemmmap.put(Items.RED_NETHER_BRICK_SLAB.getRegistryName().toString(), 10);
+        itemmmap.put(Items.SMOOTH_QUARTZ_SLAB.getRegistryName().toString(), 700);
+        itemmmap.put(Items.END_STONE_BRICK_SLAB.getRegistryName().toString(), 20);
+        itemmmap.put(Items.MOSSY_COBBLESTONE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.MOSSY_STONE_BRICK_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.ANDESITE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.GRANITE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.DIORITE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_ANDESITE_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_GRANITE_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_DIORITE_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.SMOOTH_RED_SANDSTONE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.SMOOTH_SANDSTONE_STAIRS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.RED_NETHER_BRICK_STAIRS.getRegistryName().toString(), 25);
+        itemmmap.put(Items.SMOOTH_QUARTZ_STAIRS.getRegistryName().toString(), 1500);
+        itemmmap.put(Items.END_STONE_BRICK_STAIRS.getRegistryName().toString(), 12);
+
+        itemmmap.put(Items.STONE_BRICK_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.MOSSY_STONE_BRICK_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.DIORITE_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.GRANITE_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.ANDESITE_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.SANDSTONE_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.PRISMARINE_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.NETHER_BRICK_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.RED_NETHER_BRICK_WALL.getRegistryName().toString(), 2);
+        itemmmap.put(Items.END_STONE_BRICK_WALL.getRegistryName().toString(), 2);
+
+        /**
+         * 1.15
+         */
+        itemmmap.put(Items.BEE_NEST.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.BEEHIVE.getRegistryName().toString(), 1000);
+        itemmmap.put(Items.HONEY_BOTTLE.getRegistryName().toString(), 300);
+        itemmmap.put(Items.HONEY_BLOCK.getRegistryName().toString(), 1500);
+        itemmmap.put(Items.HONEYCOMB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.HONEYCOMB_BLOCK.getRegistryName().toString(), 1500);
+
+
+        /**
+         * 1.16
+         */
+        itemmmap.put(Items.ANCIENT_DEBRIS.getRegistryName().toString(), 50000);
+        itemmmap.put(Items.NETHERITE_SCRAP.getRegistryName().toString(), 50000);
+        itemmmap.put(Items.NETHERITE_BLOCK.getRegistryName().toString(), 1944000);
+        itemmmap.put(Items.NETHERITE_INGOT.getRegistryName().toString(), 216000);
+        itemmmap.put(Items.LODESTONE.getRegistryName().toString(), 220000);
+        itemmmap.put(Items.BASALT.getRegistryName().toString(), 50);
+        itemmmap.put(Items.POLISHED_BASALT.getRegistryName().toString(), 1100);
+        itemmmap.put(Items.SMOOTH_BASALT.getRegistryName().toString(), 75);
+        itemmmap.put(Items.BLACKSTONE.getRegistryName().toString(), 50);
+        itemmmap.put(Items.POLISHED_BLACKSTONE.getRegistryName().toString(), 75);
+        itemmmap.put(Items.CHISELED_POLISHED_BLACKSTONE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_BRICKS.getRegistryName().toString(), 100);
+        itemmmap.put(Items.CRACKED_POLISHED_BLACKSTONE_BRICKS.getRegistryName().toString(), 100);
+        itemmmap.put(Items.GILDED_BLACKSTONE.getRegistryName().toString(), 10000);
+        itemmmap.put(Items.NETHER_GOLD_ORE.getRegistryName().toString(), 500);
+        itemmmap.put(Items.CRACKED_NETHER_BRICKS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.CHISELED_NETHER_BRICKS.getRegistryName().toString(), 20);
+        itemmmap.put(Items.QUARTZ_BRICKS.getRegistryName().toString(), 1500);
+
+        itemmmap.put(Items.BLACKSTONE_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_BRICK_STAIRS.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.BLACKSTONE_WALL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_WALL.getRegistryName().toString(), 10);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_BRICK_WALL.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.POLISHED_BLACKSTONE_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.POLISHED_BLACKSTONE_PRESSURE_PLATE.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.SHROOMLIGHT.getRegistryName().toString(), 1500);
+        itemmmap.put(Items.WEEPING_VINES.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.WEEPING_VINES_PLANT.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.TWISTING_VINES.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.TWISTING_VINES_PLANT.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.NETHER_SPROUTS.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.CRIMSON_ROOTS.getRegistryName().toString(), 5);
+        itemmmap.put(Items.WARPED_ROOTS.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.CRIMSON_FUNGUS.getRegistryName().toString(), 30);
+        itemmmap.put(Items.WARPED_FUNGUS.getRegistryName().toString(), 30);
+
+        itemmmap.put(Items.CRIMSON_NYLIUM.getRegistryName().toString(), 5);
+        itemmmap.put(Items.WARPED_NYLIUM.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.STRIPPED_WARPED_HYPHAE.getRegistryName().toString(), 30);
+        itemmmap.put(Items.STRIPPED_CRIMSON_HYPHAE.getRegistryName().toString(), 30);
+
+        itemmmap.put(Items.STRIPPED_CRIMSON_STEM.getRegistryName().toString(), 20);
+        itemmmap.put(Items.STRIPPED_WARPED_STEM.getRegistryName().toString(), 20);
+        itemmmap.put(Items.CRIMSON_PLANKS.getRegistryName().toString(), 8);
+        itemmmap.put(Items.WARPED_PLANKS.getRegistryName().toString(), 8);
+
+        itemmmap.put(Items.WARPED_SLAB.getRegistryName().toString(), 2);
+        itemmmap.put(Items.CRIMSON_SLAB.getRegistryName().toString(), 2);
+
+        itemmmap.put(Items.CRIMSON_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.WARPED_STAIRS.getRegistryName().toString(), 10);
+        itemmmap.put(Items.CRIMSON_FENCE.getRegistryName().toString(), 20);
+        itemmmap.put(Items.WARPED_FENCE.getRegistryName().toString(), 20);
+
+        itemmmap.put(Items.WARPED_FENCE_GATE.getRegistryName().toString(), 30);
+        itemmmap.put(Items.CRIMSON_FENCE_GATE.getRegistryName().toString(), 30);
+
+        itemmmap.put(Items.CRIMSON_DOOR.getRegistryName().toString(), 30);
+        itemmmap.put(Items.WARPED_DOOR.getRegistryName().toString(), 30);
+
+        itemmmap.put(Items.CRIMSON_TRAPDOOR.getRegistryName().toString(), 15);
+        itemmmap.put(Items.WARPED_TRAPDOOR.getRegistryName().toString(), 15);
+
+        itemmmap.put(Items.WARPED_BUTTON.getRegistryName().toString(), 5);
+        itemmmap.put(Items.CRIMSON_BUTTON.getRegistryName().toString(), 5);
+
+        itemmmap.put(Items.CRIMSON_PRESSURE_PLATE.getRegistryName().toString(), 10);
+        itemmmap.put(Items.WARPED_PRESSURE_PLATE.getRegistryName().toString(), 10);
+
+        itemmmap.put(Items.CRYING_OBSIDIAN.getRegistryName().toString(), 5000);
+        itemmmap.put(Items.RESPAWN_ANCHOR.getRegistryName().toString(), 32500);
+        itemmmap.put(Items.SOUL_SOIL.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.SOUL_FIRE.getRegistryName().toString(), 0);
+        itemmmap.put(Items.SOUL_TORCH.getRegistryName().toString(), 20);
+        itemmmap.put(Items.SOUL_CAMPFIRE.getRegistryName().toString(), 200);
+        itemmmap.put(Items.SOUL_LANTERN.getRegistryName().toString(), 500);
+        itemmmap.put(Items.CHAIN.getRegistryName().toString(), 700);
+        itemmmap.put(Items.TARGET.getRegistryName().toString(), 777);
+
+        /**
+         * 1.17
+         */
+        itemmmap.put(Items.SMALL_AMETHYST_BUD.getRegistryName().toString(), 250);
+        itemmmap.put(Items.MEDIUM_AMETHYST_BUD.getRegistryName().toString(), 500);
+        itemmmap.put(Items.LARGE_AMETHYST_BUD.getRegistryName().toString(), 1000);
+        itemmmap.put(Items.AMETHYST_CLUSTER.getRegistryName().toString(), 2000);
+        itemmmap.put(Items.BUDDING_AMETHYST.getRegistryName().toString(), 10000);
+        itemmmap.put(Items.AMETHYST_SHARD.getRegistryName().toString(), 2000);
+        itemmmap.put(Items.AMETHYST_BLOCK.getRegistryName().toString(), 10000);
+        itemmmap.put(Items.POINTED_DRIPSTONE.getRegistryName().toString(), 1000);
+        itemmmap.put(Items.DRIPSTONE_BLOCK.getRegistryName().toString(), 4000);
+        itemmmap.put(Items.CALCITE.getRegistryName().toString(), 1000);
+        itemmmap.put(Items.SMOOTH_BASALT.getRegistryName().toString(), 50);
+        itemmmap.put(Items.TUFF.getRegistryName().toString(), 10);
+        itemmmap.put(Blocks.CAVE_VINES.getRegistryName().toString(), 5);
+        itemmmap.put(Blocks.CAVE_VINES_PLANT.getRegistryName().toString(), 5);
+        itemmmap.put(Items.GLOW_BERRIES.getRegistryName().toString(), 100);
+        itemmmap.put(Items.AZALEA.getRegistryName().toString(), 50);
+        itemmmap.put(Items.FLOWERING_AZALEA.getRegistryName().toString(), 100);
+        itemmmap.put(Items.AZALEA_LEAVES.getRegistryName().toString(), 100);
+        itemmmap.put(Items.FLOWERING_AZALEA_LEAVES.getRegistryName().toString(), 100);
+        itemmmap.put(Items.HANGING_ROOTS.getRegistryName().toString(), 50);
+        itemmmap.put(Items.SPORE_BLOSSOM.getRegistryName().toString(), 500);
+        itemmmap.put(Items.SMALL_DRIPLEAF.getRegistryName().toString(), 500);
+        itemmmap.put(Items.BIG_DRIPLEAF.getRegistryName().toString(), 500);
+        itemmmap.put(Blocks.BIG_DRIPLEAF_STEM.getRegistryName().toString(), 0);
+        itemmmap.put(Items.MOSS_BLOCK.getRegistryName().toString(), 20);
+        itemmmap.put(Items.MOSS_CARPET.getRegistryName().toString(), 60);
+        itemmmap.put(Items.TINTED_GLASS.getRegistryName().toString(), 5000);
+
+        itemmmap.put(Items.COPPER_ORE.getRegistryName().toString(), 50);
+        itemmmap.put(Items.COPPER_INGOT.getRegistryName().toString(), 250);
+        itemmmap.put(Items.DEEPSLATE_COPPER_ORE.getRegistryName().toString(), 50);
+
+        itemmmap.put(Items.COPPER_BLOCK.getRegistryName().toString(), 2500);
+
+        itemmmap.put(Items.EXPOSED_COPPER.getRegistryName().toString(), 2000);
+        itemmmap.put(Items.WEATHERED_COPPER.getRegistryName().toString(), 2000);
+        itemmmap.put(Items.OXIDIZED_COPPER.getRegistryName().toString(), 3000);
+
+        itemmmap.put(Items.CUT_COPPER.getRegistryName().toString(), 3000);
+        itemmmap.put(Items.EXPOSED_CUT_COPPER.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WEATHERED_CUT_COPPER.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.OXIDIZED_CUT_COPPER.getRegistryName().toString(), 3500);
+
+        itemmmap.put(Items.WAXED_COPPER_BLOCK.getRegistryName().toString(), 3000);
+        itemmmap.put(Items.WAXED_EXPOSED_COPPER.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WAXED_WEATHERED_COPPER.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WAXED_OXIDIZED_COPPER.getRegistryName().toString(), 3500);
+        itemmmap.put(Items.WAXED_CUT_COPPER.getRegistryName().toString(), 4000);
+        itemmmap.put(Items.WAXED_EXPOSED_CUT_COPPER.getRegistryName().toString(), 3500);
+        itemmmap.put(Items.WAXED_WEATHERED_CUT_COPPER.getRegistryName().toString(), 3500);
+        itemmmap.put(Items.WAXED_OXIDIZED_CUT_COPPER.getRegistryName().toString(), 4500);
+
+        itemmmap.put(Items.CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.EXPOSED_CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.WEATHERED_CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.OXIDIZED_CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.WAXED_CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.WAXED_EXPOSED_CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.WAXED_WEATHERED_CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.WAXED_OXIDIZED_CUT_COPPER_SLAB.getRegistryName().toString(), 300);
+        itemmmap.put(Items.CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.EXPOSED_CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WEATHERED_CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.OXIDIZED_CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WAXED_CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WAXED_EXPOSED_CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WAXED_WEATHERED_CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+        itemmmap.put(Items.WAXED_OXIDIZED_CUT_COPPER_STAIRS.getRegistryName().toString(), 2500);
+
+        itemmmap.put(Items.LIGHTNING_ROD.getRegistryName().toString(), 1000);
+        itemmmap.put(Items.SCULK_SENSOR.getRegistryName().toString(), 5000);
+
+        itemmmap.put(Items.CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.WHITE_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.ORANGE_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.MAGENTA_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.LIGHT_BLUE_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.YELLOW_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.LIME_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.PINK_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.GRAY_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.LIGHT_GRAY_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.CYAN_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.PURPLE_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.BLUE_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.BROWN_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.GREEN_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.RED_CANDLE.getRegistryName().toString(), 100);
+        itemmmap.put(Items.BLACK_CANDLE.getRegistryName().toString(), 100);
+        /**
+         itemmmap.put(Items.BEETROOT_SEEDS.getRegistryName().toString(), 2);
+
+         1.12.2以降名前変更分
+         **/
         if (itemmmap.containsKey(itemStack.getItem().getRegistryName().toString())) {
             vallue = itemmmap.get(itemStack.getItem().getRegistryName().toString());
             arrayValue = vallue*ItemCount;

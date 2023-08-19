@@ -1,6 +1,7 @@
 package com.Moyashi.Nekokamiko.init;
 
 import com.Moyashi.Nekokamiko.main.Reference;
+import com.Moyashi.Nekokamiko.repayhopper.item.RepayHopperItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -33,4 +34,8 @@ public class ModBlocks
         }
         return registryObject;
     }
+
+   // public static final RegistryObject<Block> BLOCK_HOPPER = REGISTER.register("testhopper_block",()-> new TestHopperBlock());
+
+
 }

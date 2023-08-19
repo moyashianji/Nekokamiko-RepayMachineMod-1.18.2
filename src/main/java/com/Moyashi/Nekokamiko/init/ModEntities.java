@@ -2,6 +2,7 @@ package com.Moyashi.Nekokamiko.init;
 
 
 
+import com.Moyashi.Nekokamiko.hopper.core.OriginalHopperEntity;
 import com.Moyashi.Nekokamiko.main.Reference;
 import com.Moyashi.Nekokamiko.minecart.entity.ClientHandler;
 import com.Moyashi.Nekokamiko.minecart.entity.GoldenHopperMinecart;
@@ -28,4 +29,16 @@ public class ModEntities
                         //ビルダーの設定完了なので、最後にエンティティをビルドして登録する
                     }).build("golden_hopper_minecart")
     );
+
+    public static final RegistryObject<EntityType<GoldenHopperMinecart>> REPAYER_HOPPER = REGISTER.register("repayer_hopper", () -> EntityType.Builder.<GoldenHopperMinecart>of(GoldenHopperMinecart::new, MobCategory.MISC)
+            .sized(0.98F, 0.7F)
+            .setCustomClientFactory(
+                    (entity, world) -> {
+                        GoldenHopperMinecart minecart = new GoldenHopperMinecart(ModEntities.GOLDEN_HOPPER_MINECART.get(), world);
+                        ClientHandler.handleGoldenHopperMinecartSpawn(minecart);
+                        return minecart;
+                        //ビルダーの設定完了なので、最後にエンティティをビルドして登録する
+                    }).build("repayer_hopper")
+    );
+
 }

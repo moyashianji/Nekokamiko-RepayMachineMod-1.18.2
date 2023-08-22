@@ -21,10 +21,10 @@ public class onHUD {
 
         if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT) {
             // 描画処理のパラメータを設定
-            int posX = 10; // X座標
+            int posX = 100; // X座標
             int posY = 0; // Y座標
 
-            int posX2 = 10;
+            int posX2 = 100;
             int posY2 = 10;
             int color = 0xFFFFFF; // テキストの色 (白色)
             int fontSize = 12; // フォントサイズ
@@ -43,8 +43,8 @@ public class onHUD {
             matrixsStack.translate(posX, posY, 0);
             matrixsStack2.translate(posX2,posY2,0);
              // prizeMoneyの値を取得して描画
-            fontsRenderer.draw(matrixsStack, line1, 10, 0, -1);
-            fontsRenderer.draw(matrixsStack2, line2, 10, 10, -1);
+            fontsRenderer.draw(matrixsStack, line1, 100, 0, -1);
+            fontsRenderer.draw(matrixsStack2, line2, 100, 10, -1);
 
             matrixsStack.popPose();
             matrixsStack2.popPose();

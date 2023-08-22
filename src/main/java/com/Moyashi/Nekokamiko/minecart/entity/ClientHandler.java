@@ -1,5 +1,6 @@
 package com.Moyashi.Nekokamiko.minecart.entity;
 
+import com.Moyashi.Nekokamiko.render.GoldenMinecartRenderer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -17,8 +18,7 @@ public class ClientHandler
     {
         //MenuScreenに新しいGUIを登録
         //新たなエンティティレンダラーを登録。cartのレンダーを作成
-        EntityRenderers.register(ModEntities.GOLDEN_HOPPER_MINECART.get(), context ->
-                new MinecartRenderer<>(context, ModelLayers.HOPPER_MINECART));
+        EntityRenderers.register(ModEntities.GOLDEN_HOPPER_MINECART.get(), GoldenMinecartRenderer::new);
     }
 
     //カートがスポーンした時の処理

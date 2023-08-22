@@ -5,6 +5,7 @@ import com.Moyashi.Nekokamiko.hud.onHUD;
 import com.Moyashi.Nekokamiko.init.ModBlocks;
 import com.Moyashi.Nekokamiko.init.ModEntities;
 import com.Moyashi.Nekokamiko.init.ModItems;
+import com.Moyashi.Nekokamiko.init.RenderRegistry;
 import com.Moyashi.Nekokamiko.minecart.entity.ClientHandler;
 import com.Moyashi.Nekokamiko.tooltip.addtip;
 import net.minecraft.data.DataGenerator;

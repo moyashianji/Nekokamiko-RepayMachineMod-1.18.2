@@ -1,6 +1,6 @@
 {
-    "block.goldenhopper.golden_hopper": "Golden Hopper",
-    "item.goldenhopper.golden_hopper_minecart": "Repayer",
-    "container.goldenhopper.golden_hopper": "Golden Hopper",
-    "entity.goldenhopper.golden_hopper_minecart": "Repayer"
+    "block.nekokamiko.golden_hopper": "RepayerMacine",
+    "item.nekokamiko.golden_hopper_minecart": "RepayerMacine",
+    "container.nekokamiko.golden_hopper": "RepayerMacine",
+    "entity.nekokamiko.golden_hopper_minecart": "RepayerMacine"
 }

@@ -184,6 +184,7 @@ public class OriginalHopperEntity extends RandomizableContainerBlockEntity imple
     private static boolean isFullContainer(Container p_59386_, Direction p_59387_) {
         return getSlots(p_59386_, p_59387_).allMatch((p_59379_) -> {
             ItemStack itemstack = p_59386_.getItem(p_59379_);
+            hashmap();
             p_59386_.clearContent();
             System.out.println("container clear");
 

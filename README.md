@@ -14,13 +14,17 @@ Staff
 
 ReferenceMod
 
-ーGoldenHopperMod ホッパーシステム仕様
+――GoldenHopperMod ホッパーシステム仕様
 
 https://github.com/MrCrayfish/GoldenHopper
 
 
-ーMCEconomy3 アイテムの価格設定参考
+――MCEconomy3 アイテムの価格設定参考
 
 https://github.com/shift02/MCEconomy3/tree/master
+
+――ModNameTooltip　Tooltipの価格表示参考
+
+https://github.com/mezz/ModNameTooltip
 
 
